@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">pickr</string>
+    <string name="option_prompt">Enter option</string>
+    <string name="button_choose">Choose</string>
+    <string name="button_add_option">Add option</string>
+    <string name="title_text">iChoose</string>
+</resources>
