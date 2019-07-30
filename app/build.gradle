@@ -9,6 +9,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -17,6 +18,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
 }
 
 dependencies {
@@ -27,4 +40,14 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.google.android.material:material:1.0.0'
+    // https://mvnrepository.com/artifact/io.selendroid/selendroid-client
+    //compile group: 'io.selendroid', name: 'selendroid-client', version: '0.17.0'
+    //implementation files('libs/selendroid-client-0.17.0.jar')
+    //implementation 'io.selendroid.selendroid-client:0.17.0'
+   // implementation 'com.io.selendroid-standalone:0.17.0'
+    //implementation files('C:/Users/PeteMiner/Downloads/selendroid-client-0.17.0')
+    implementation 'io.selendroid:selendroid-client:0.17.0'
+
+
+
 }

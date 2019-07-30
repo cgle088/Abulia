@@ -18,11 +18,10 @@ public class OptionChooseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_option_choose);
         Intent intent = getIntent();
         String chosenOption = intent.getStringExtra(MainActivity.MESSAGE);
-        TextView textView = new TextView(this);
+
+        TextView textView = findViewById(R.id.chosenOptionTextView);
         textView.setText(chosenOption);
-        textView.setTextSize(24);
-        ConstraintLayout li = findViewById(R.id.answerLayout);
-        li.addView(textView);
+        textView.setTextSize(100);
 
     }
 }
