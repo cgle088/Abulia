@@ -3,6 +3,7 @@ package com.example.pickr;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -94,6 +95,8 @@ public class MainActivity extends AppCompatActivity {
      */
     EditText createOptionEditText(){
         EditText tv = new EditText(this);
+        //limits the number of characters per option
+        tv.setFilters(new InputFilter[]{new InputFilter.LengthFilter(22)});
         tv.setLayoutParams(new ViewGroup.LayoutParams(800,
                 ViewGroup.LayoutParams.WRAP_CONTENT));
         tv.setTextSize(24);
