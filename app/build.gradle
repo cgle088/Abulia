@@ -44,10 +44,10 @@ dependencies {
     //compile group: 'io.selendroid', name: 'selendroid-client', version: '0.17.0'
     //implementation files('libs/selendroid-client-0.17.0.jar')
     //implementation 'io.selendroid.selendroid-client:0.17.0'
-   // implementation 'com.io.selendroid-standalone:0.17.0'
+    // implementation 'com.io.selendroid-standalone:0.17.0'
     //implementation files('C:/Users/PeteMiner/Downloads/selendroid-client-0.17.0')
     implementation 'io.selendroid:selendroid-client:0.17.0'
-
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 
 
 }

@@ -1,7 +1,10 @@
 <resources>
-    <string name="app_name">pickr</string>
+    <string name="app_name">ppickk</string>
     <string name="option_prompt">Enter option</string>
     <string name="button_choose">Choose</string>
     <string name="button_add_option">Add option</string>
     <string name="title_text">iChoose</string>
+    <string name="title_activity_menu2">MenuActivity2</string>
+    <string name="main_menu_list">List</string>
+    <string name="main_menu_5050">50/50</string>
 </resources>
