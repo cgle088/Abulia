@@ -6,5 +6,8 @@
     <string name="title_text">iChoose</string>
     <string name="title_activity_menu2">MenuActivity2</string>
     <string name="main_menu_list">List</string>
+    <string name="list_type_new">New List</string>
+    <string name="list_type_saved">Saved List</string>
     <string name="main_menu_5050">50/50</string>
+    <string name="button_save_list">Save List</string>
 </resources>

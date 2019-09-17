@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view The containing view
      */
     public void newList(View view){
-        Intent intent = new Intent(this, ListActivity.class);
+        Intent intent = new Intent(this, ListTypeActivity.class);
         startActivity(intent);
     }
 

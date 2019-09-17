@@ -11,6 +11,7 @@ android {
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        dataBinding.enabled = true
     }
     buildTypes {
         release {
@@ -33,6 +34,7 @@ android {
 }
 
 dependencies {
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
@@ -46,7 +48,7 @@ dependencies {
     //implementation 'io.selendroid.selendroid-client:0.17.0'
     // implementation 'com.io.selendroid-standalone:0.17.0'
     //implementation files('C:/Users/PeteMiner/Downloads/selendroid-client-0.17.0')
-    implementation 'io.selendroid:selendroid-client:0.17.0'
+//    implementation 'io.selendroid:selendroid-client:0.17.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 
 

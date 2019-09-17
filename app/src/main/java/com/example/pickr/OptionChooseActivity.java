@@ -13,7 +13,7 @@ public class OptionChooseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_option_choose);
         Intent intent = getIntent();
-        String chosenOption = intent.getStringExtra(ListActivity.MESSAGE);
+        String chosenOption = intent.getStringExtra(NewListActivity.MESSAGE);
 
         TextView textView = findViewById(R.id.chosenOptionTextView);
         textView.setText(chosenOption);

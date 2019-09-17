@@ -12,6 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SavedListsActivity"
+            android:parentActivityName=".ListTypeActivity">
+
+        </activity>
+        <activity android:name=".ListTypeActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_menu2">
@@ -23,17 +30,16 @@
         </activity>
         <activity
             android:name=".OptionChooseActivity"
-            android:parentActivityName=".ListActivity">
+            android:parentActivityName=".NewListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ListActivity" />
+                android:value=".NewListActivity" />
         </activity>
-        <activity android:name=".ListActivity">
+        <activity android:name=".NewListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".ListTypeActivity" />
         </activity>
-
     </application>
 
 </manifest>
